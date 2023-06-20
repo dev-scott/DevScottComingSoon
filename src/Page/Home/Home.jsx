@@ -4,7 +4,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrYoutube } from "react-icons/gr";
 import Countdown from "../../Components/ui/CountDown";
-import { fadeIn, footerVariants, navVariants, staggerContainer, zoomIn } from "../../../util/motion";
+import { fadeIn, footerVariants, navVariants, staggerContainer, textVariant2, zoomIn } from "../../../util/motion";
 import { motion } from "framer-motion";
 const Home = () => {
   return (
@@ -20,10 +20,10 @@ const Home = () => {
             Coming Soon
           </motion.h1>
 
-          <p className=" text-center text-white text-2xl mt-2 mb-5 ">
+          <motion.p className=" text-center text-white text-2xl mt-2 mb-5 " variants={textVariant2} initial="hidden" whileInView="show" >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam{" "}
             <br /> fuga qui officia accusantium doloremque dignissimos!
-          </p>
+          </motion.p>
 
           <div className="mt-8 w-[600px] rounded-xl h-[80px] flex justify-center items-center opacity-40  bg-slate-500 px-3  py-2">
             <input
