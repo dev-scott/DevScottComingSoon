@@ -16,7 +16,7 @@ const Navbar = () => {
     </div>
   </div>
   <div className="navbar-center">
-    <a className="btn text-white btn-ghost normal-case text-xl">Dokitora</a>
+    <a className="btn text-white btn-ghost normal-case text-xl">DevLabX</a>
   </div>
 
 
